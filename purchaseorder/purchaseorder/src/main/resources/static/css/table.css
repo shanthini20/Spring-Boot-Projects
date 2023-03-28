@@ -1,0 +1,19 @@
+.search-Wrapper
+{
+	display:flex;
+	flex-direction:colummn;
+	gap:.25rem;
+	padding-top:40px;
+	margin-top:20px;
+	margin-right: 100px;
+	margin-left: 200px;
+	margin-bottom: 10px;
+	border-color: blue;
+	border-radius: 20px;
+}
+
+th {
+    min-width: 150px;
+    margin-top: 900px;
+}
+

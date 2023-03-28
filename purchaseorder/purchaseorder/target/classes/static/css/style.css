@@ -1,0 +1,22 @@
+.form-label {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+label {
+  font-size: 14px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  font-size: 14px;
+}
+select {
+  padding: 4px;
+}
+option {
+  font-size: 14px;
+}

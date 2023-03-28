@@ -1,0 +1,64 @@
+<!Doctype>
+<html>
+<head>
+<title>Excel Datascreen</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/datascreen.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <script type="text/javascript" src="js/datascreen.js"></script>
+          <script type="text/javascript" src="js/common.js"></script>
+          
+        
+</head>
+
+<body>
+      
+     <div class="search-Wrapper">
+     
+     <input type="search" id="search">
+     <button onclick="search()" type=button>Search</button>
+     <button onclick="window.history.go(0);">Clear</button>
+     </div>
+  
+    
+        <div class="container"> 
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+ <th>Priority</th>
+<th>Reason</th>
+<th>Vendor ID</th>
+<th>Vendor Name</th>
+<th>Scan Id</th>
+<th>Cluster</th>
+<th>Country</th>
+<th>Document No</th>
+<th>Company Code</th>
+<th>Type</th>
+<th>Total amount</th>
+<th>Currency</th>
+<th>PO No</th>
+<th>Scan date</th>
+<th>Existing status</th>
+<th></th>
+
+      </tr>
+    </thead>
+    <tbody id="table_body">
+    
+      
+    </tbody >
+  </table>
+       </div>
+     
+       
+       <script type="text/javascript">
+    	   got();
+       </script>
+       
+       
+</body>
+</html>
