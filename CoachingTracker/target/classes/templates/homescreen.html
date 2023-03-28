@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="style.css" />
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+	rel="stylesheet" />
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div id="over">
+
+		<fieldset>
+			<legend>CoachingTracker-Entry</legend>
+
+
+			<form class="form-horizontal">
+				<div>
+					<div style="padding-top: 50px;" class="form-group">
+						<label class="control-label col-sm-3" for="name">Shift
+							Date:</label>
+						<div class="col-sm-4">
+							<input value="" type="date" class="form-control" id="sdate"
+								placeholder="" name="date" />
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="proof">Supervisor
+							Name:</label>
+						<div class="col-sm-4">
+							<input value="" type="text" class="form-control" id="sname"
+								placeholder="" name="date" />
+						</div>
+
+
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="agentname">Agent
+							Name:</label>
+						<div class="col-sm-4">
+
+							<select class="form-control" name="agentname" id="agentname">
+
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group" style="display: flex">
+						<label style="display: flex" class="control-label col-sm-3"
+							for="reason">Meeting/Coaching Reason:</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="reason"
+								placeholder="" name="reason" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="hour">Duration
+							Hour:</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="hour" placeholder=""
+								name="hour" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="Minute">Duration
+							Minute:</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="minute"
+								placeholder="" name="Minute" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-3" for="name">Notes:</label>
+						<div class="col-sm-6">
+							<textarea class="form-control" name="notes" id="notes">  </textarea>
+
+						</div>
+
+					</div>
+					<button style="position: relative; left: 300px;" onclick="post()"
+						type="button" class="btn btn-primary">Save</button>
+					<button 
+					onclick="window.history.go(-1);"
+					style="position: relative; left: 300px;"
+						type="submit" class="btn btn-primary">Close</button>
+				</div>
+
+
+
+			</form>
+
+		</fieldset>
+
+	</div>
+	<script src = "JS/homescreen.js" type="text/javascript">
+		
+	</script>
+</body>
+
+</html>

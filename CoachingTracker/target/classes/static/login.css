@@ -1,0 +1,111 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+    button:hover {
+  opacity: 0.8;
+}
+.container {
+  padding: 10px;
+  width: 30%;
+ 
+  align-items: center;
+  border-radius: 20px;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 30%;
+}
+    .imgcontainer {
+  text-align: center;
+  margin: 20px 0 12px 0;
+
+}
+/* Style all input fields */
+.parent {
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 50px;
+
+}
+#Hello{
+  background-image:url(images/back.jpg);
+}
+.form-control {
+    width: unset;
+    display: inline;
+}
+input {
+  /* width: 100%; */
+  padding: 12px;
+
+ 
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+.inner{
+  border: none;
+}
+
+/* Style the submit button */
+#b1{
+  background-color:rgb(62, 214, 217);
+  color: white;
+ margin-top: 50px;
+ padding-left:20px;
+ padding-right: 20px;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #e9dfdf;
+  padding: 20px;
+  margin-top: 50px;
+  display:block;
+ background: rgb(0,0,0,0.2);
+ border: none;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+ 
+  
+ 
+
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 5px 15px;
+  font-size: 10px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
