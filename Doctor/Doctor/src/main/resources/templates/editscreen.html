@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two Forms Example</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="js/table.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript"  src="js/editscreen.js"></script>
+	<style>
+		form {
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+		}
+		h2 {
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+		.btn {
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	
+		<div class="row">
+		
+			<div class="col-md-6">
+				<div>
+					<h2>Patient Details</h2>
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" class="form-control" id="name">
+					</div>
+					<div class="form-group">
+						<label for="age">Age:</label>
+						<input type="number" class="form-control" id="age">
+					</div>
+					<div class="form-group">
+						<label>Gender:</label><br>
+						<div class="form-check-inline">
+							<label class="form-check-label">
+								<input type="radio" class="form-check-input" id="g1" name="gender" value="male">Male
+							</label>
+						</div>
+						<div class="form-check-inline">
+							<label class="form-check-label">
+								<input type="radio" class="form-check-input" id="g2"  name="gender" value="female">Female
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone:</label>
+						<input type="tel" class="form-control" id="phone">
+					</div>
+					<div class="form-group">
+						<label for="address">Address:</label>
+						<textarea class="form-control" id="address"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="enquiry">Enquiry:</label>
+						<input type="text" class="form-control" id="enquiry">
+					</div>
+					<div class="form-group">
+						<label for="appointment_date">Appointment Date:</label>
+						<input type="date" class="form-control" id="appointment_date">
+					</div>
+					<div class="form-group">
+						<label for="appointment_time">Appointment Time:</label>
+						<input type="time" class="form-control" id="appointment_time">
+					</div>
+				</div>
+		</div>
+		
+		<div class="col-md-6">
+				<div>
+					<h2>Doctor Details</h2>
+					<div class="form-group">
+						<label for="name">Doctor Name:</label><br>
+						<select id="docname" class="form-control"></select>
+					</div>
+					
+					<div class="form-group">
+						<label for="phone">State:</label>
+						<input type="tel" class="form-control" id="state">
+					</div>
+					<div class="form-group">
+						<label for="address">City:</label>
+						<textarea class="form-control" id="city"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="enquiry">Area:</label>
+						<input type="text" class="form-control" id="area">
+					</div>
+				</div>
+				
+				<button type=button class="btn btn-primary" onclick="editpatient();">Update</button>
+				<button type=button class="btn btn-primary" onclick=" Home2();">Cancel</button>
+		
+				
+		</div>
+		
+		
+		
+		
+		</div>
+		
+		
+		</div>

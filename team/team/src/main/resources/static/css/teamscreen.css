@@ -1,0 +1,55 @@
+
+#root{
+	margin-top: 100px;
+}
+
+#team{
+	margin-top: 50px;
+	margin-left: 400px;
+}
+
+#drop{
+	margin-left: 500px;
+}
+#butt{
+	margin-top: 30px;
+	margin-left: 40px;
+}
+
+#list1{
+	margin-left: 100px;
+}
+
+#ul1,#ul2{
+	border:1px solid black;
+	overflow-y:scroll;
+	
+}
+
+li{
+	border:1px solid black;
+	cursor: pointer;
+}
+
+
+#add {
+	padding-right: 25px;
+	padding-left: 13px;
+}
+
+
+#getteam{
+	cursor: pointer;
+}
+option{
+	cursor: pointer;
+}
+#select-all-checkbox-2{
+	background-color:gray;
+}
+
+
+#del{
+	padding-right: 20px;
+	padding-left: 2px;
+}

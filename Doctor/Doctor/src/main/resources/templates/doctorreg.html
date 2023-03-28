@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Doctor registration</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/doctorview.js"></script>
+<script type="text/javascript" src="js/table.js"></script>
+<script type="text/javascript" src="js/doctorreg.js"></script>
+
+<style>
+form {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.btn {
+	margin-right: 10px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+       
+		<div class="row">
+
+			<div class="col-md-6">
+				<div>
+					<h4>Doctor Registration</h4>
+					<div class="form-group">
+						<label for="name">Consultant Name:</label> <input type="text"
+							class="form-control" id="cname" >
+					</div>
+					<div class="form-group">
+						<label for="age">Age:</label> <input type="text"
+							class="form-control" id="cage" >
+					</div>
+					<div class="form-group">
+						<label for="age">Qualification:</label> <input type="text"
+							class="form-control" id="qualification" >
+					</div>
+					<div class="form-group">
+						<label for="age">Register No:</label> <input type="text"
+							class="form-control" id="reg" >
+					</div>
+					
+				
+					<div class="form-group">
+						<label for="address">Address:</label>
+						<textarea class="form-control" id="caddress" ></textarea>
+					</div>
+						
+					
+					<div class="form-group">
+						<label for="appointment_date">Clinic City:</label> <input
+							type="text" class="form-control" id="ccity" >
+					</div>
+					<div class="form-group">
+						<label for="appointment_time">Clinic State:</label> 
+						<input type=text id="cstate" class="form-control" >
+
+					</div>
+						<div class="form-group">
+						<label for="appointment_time">Clinic Area:</label> <input
+							type="text" class="form-control" id="carea" >
+					</div>
+					
+
+
+				</div>
+			</div>
+
+		</div>
+
+	<div>
+	
+	   <button type=button onclick="newdoc();" class="btn btn-primary">Save</button>
+	  <button type=button onclick="window.history.go(0);" class="btn btn-primary">Cancel</button>
+	</div>
+        
+	</div>
+	

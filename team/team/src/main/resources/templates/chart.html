@@ -1,0 +1,63 @@
+<!doctype>
+<html>
+<head>
+<title>
+chart
+</title>
+<script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+  <script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+  #chart-container{
+  width: 400px;
+  }
+  </style>
+</head>
+
+<body>
+
+ <div id="chart-container"></div>
+ 
+ <script>
+ $(document).ready(function () {
+     var apiEndpoint = 'http://localhost:8877/team/teamcount';
+     $.ajax({
+       url: apiEndpoint,
+       type: 'GET',
+       dataType: 'json',
+       success: function (data) {
+         var chartConfig = {
+           type: 'column3d',
+           width: '150%',
+		  height: '500',
+           dataFormat: 'json',
+           dataSource: {
+             chart: {
+               caption: 'Team Count',
+               xAxisName: 'Teams',
+               yAxisName: 'Users'
+             },
+             data: data.map(function (row) {
+               return { label: row[0], value: row[1] };
+             })
+           }
+         };
+         var chart = new FusionCharts(chartConfig);
+         chart.render('chart-container');
+       },
+       error: function (xhr, status, error) {
+         console.error(error);
+       }
+     });
+   });
+
+ 
+ 
+ </script>
+ 
+ 
+</body>
+
+
+
+</html>

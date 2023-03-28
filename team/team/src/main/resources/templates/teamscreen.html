@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/teamscreen.css">
+ <script src="js/teamscreen.js"></script> 
+ <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+  <script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <style>
+ #load-chart{
+ margin-left: 1000px;
+ 
+ }
+ </style>
+ 
+</head>
+<body>
+
+<form id="f1">
+  <div id=team class="form-group form-inline">
+    <label for="newteam">New Team:</label>
+    <input id="newteam" type="text" class="form-control form-inline" required >
+    <button id="save"  type="submit" >Save</button>
+  </div>
+  
+ <div id=drop class="dropdown">
+    <label for="field3">Select Team:</label><br>
+          <select  name="agent" id="getteam">
+          
+          </select>
+  </div>
+  
+</form>
+
+
+<div id=root class="container col-md-12">
+<button id="load-chart" onclick="window.location.href='/chart'">Load Chart</button>
+<div id=list1 class="container col-md-4">
+<input type='checkbox' id='select-all-checkbox-1'><b>Select all</b>
+  <ul id=ul1 class="list-group">
+  
+   
+  </ul>
+</div>
+<div id=butt class="container col-md-2">
+<div >
+<button id="add"  disabled>Move</button>
+</div>
+<br>
+<div>
+<button  id="del" type=button >Remove </button>
+</div>
+</div>
+<div id=list2 class="container col-md-4">
+ <input type='checkbox' id='select-all-checkbox-2'><b>Select all</b>
+  <ul id=ul2 class="list-group">
+   
+  </ul>
+</div>
+</div>
+
+
+
+  
+
+
+<script>
+$("#save").click(function(){
+	event.preventDefault();
+	var ele = document.getElementById("f1");
+	  var chk_status = ele.checkValidity();
+	  ele.reportValidity();
+	  if (chk_status) {
+		  newteam();
+	  
+	}  
+	
+})
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
